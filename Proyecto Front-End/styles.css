@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color:#3d1357; /* Violeta */
+    background-color:#180922; /* Violeta */
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -25,7 +25,7 @@ nav {
     justify-content: space-between; /* Alinear elementos a los extremos */
     align-items: center; /* Centrar verticalmente */
     padding: 10px 20px; /* Añadir un poco de espacio interno */
-    background-color: #3d1357; /* Violeta */
+    background-color: #180922; /* Violeta */
     color: white;
 }
 
@@ -77,7 +77,7 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 6px 10px;
-    background-color:#3d1357; /* Violeta más oscuro */
+    background-color:#180922; /* Violeta más oscuro */
     border-radius: 5px;
 }
 
@@ -101,7 +101,7 @@ main {
 }
 
 .category {
-    background-color:#3d1357; /* Violeta más oscuro */
+    background-color:#180922; /* Violeta más oscuro */
     color: white;
     padding: 20px;
     text-align: center;
@@ -151,7 +151,7 @@ main {
     /* z-index: 0; Asegura que la sección de categorías esté por encima del footer */ 
 }
 footer {
-    background-color: #6a1b9a; /* Violeta */
+    background-color: #180922; /* Violeta */
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -169,7 +169,7 @@ section {
 }
 
 .category {
-    background-color:#3d1357; /* Violeta más oscuro */
+    background-color:#180922; /* Violeta más oscuro */
     color: white;
     padding: 20px;
     margin: 10px;
@@ -264,7 +264,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color:#3d1357; /* Violeta */
+    background-color:#180922; /* Violeta */
     color: white;
     text-align: center;
     padding: 8px 0;
