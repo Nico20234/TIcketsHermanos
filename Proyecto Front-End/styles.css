@@ -320,3 +320,21 @@ footer {
 .copyright {
     margin-top: 20px;
 }
+
+.cart-container {
+    position: relative;
+}
+
+.cart-content {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+}
+
+.cart-button:hover + .cart-content {
+    display: block;
+}
