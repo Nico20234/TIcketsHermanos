@@ -1,3 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+.header{
+    grid-area: header;
+}
+.main{  
+    grid-area: main;
+}
+.nav{
+    grid-area: nav;
+}
+.footer{
+     grid-area: footer;
+ }
+
+.sidebar{
+        grid-area: sidebar;
+        /* background-color: aqua; */
+}
+.sidebar2{
+    grid-area: sidebar2;
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    /* "sidebar" */
+    "main"
+    "footer"
+    ;
+}
+@media (min-width: 600px){
+    .grid-container{
+        grid-template: 
+        "header   header" 50px
+        "nav      nav"    100px
+        "sidebar  main"    auto
+        "footer   footer"  100px /
+        200px     auto
+        ;
+    }
+}
+@media (min-width: 900px){
+    .grid-container{
+        grid-template: 
+        "header   header header" 50px
+        "nav      nav    nav   " 100px
+        "sidebar main   sidebar2" auto
+        "footer   footer footer"  100px /
+        200px     auto   200px
+        ;
+    }
+
+
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,7 +73,7 @@ body {
 header {
     background-color:#180922; /* Violeta */
     color: white;
-    padding: 10px 0;
+    padding: 30px ;
     text-align: center;
 }
 
@@ -22,9 +83,9 @@ nav {
 }
 .nav-container {
     display: flex;
-    justify-content: space-between; /* Alinear elementos a los extremos */
+    justify-content: flex-end; /* Alinear elementos a los extremos */
     align-items: center; /* Centrar verticalmente */
-    padding: 10px 20px; /* Añadir un poco de espacio interno */
+    padding: 20px 20px; /* Añadir un poco de espacio interno */
     background-color: #180922; /* Violeta */
     color: white;
 }
@@ -37,7 +98,7 @@ nav a {
 .search-container {
     position: center;
     justify-content: center;
-    order: 1;
+    order: -1;
 }
 
 .search-container input[type="text"] {
@@ -84,6 +145,27 @@ nav a {
 .nav-buttons a:hover {
     background-color: #6a1b9a; /* Violeta */
 }
+/* Sidebar */
+.main-container {
+    display: grid;
+    place-items: left; /* Esto centrará el sidebar2 en ambas direcciones */
+    padding: 10px;
+  }
+.sidebar {
+    /* background: #f9f9f9; */
+    /* padding: 15px; */
+    /* border: 1px solid #ddd; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ticket-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* border: 1px solid #ddd; */
+  }
 main {
     padding: 20px;
 }
@@ -211,35 +293,6 @@ input[type="submit"]:hover {
     background-color: #8e24aa; /* Violeta más oscuro */
 }
 
-/* Estilos específicos de la página de detalle */
-.product-details {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.product-image {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.product-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.product-description {
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.product-price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #6a1b9a; /* Violeta */
-}
 
 /* Estilos específicos de la página de checkout */
 .checkout-form {
