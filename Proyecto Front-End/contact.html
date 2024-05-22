@@ -8,17 +8,22 @@
     <script src="validation.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="search.html">Catalogue</a></li>
-                <li><a href="checkout.html">Basket</a></li>
-                <li><a href="detalleproducto.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="header"> <h1><a href="ma"></a>Ventas de tickets</h1></header>
+    <!-- Header común a todas las páginas -->
+   <div class="nav">
+    <nav class="nav-container">
+        <!-- <h1>Ventas de tickets</h1> -->
+        <div class="nav-buttons">
+            <a href="#">Iniciar sesión</a>
+            <a href="#">Registrarse</a>
+            <a href="checkout.html" class="cart-button">&#128722;Carrito</a>
+        </div> <!-- Menú de navegación -->
+        <div class="search-container">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </nav>
+</div>
     <main>
         <h2>Contact Form</h2>
         <form id="contactForm" action="#" method="post">
